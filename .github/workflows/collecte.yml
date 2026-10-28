@@ -1,0 +1,44 @@
+name: Collecte
+
+on:
+  schedule:
+    - cron: "0 4 * * 2"          # chaque mardi à 4h UTC
+  workflow_dispatch:
+    inputs:
+      annees:
+        description: "Années à collecter (ex : 2025 ou 2024,2025)"
+        default: "2025"
+  push:
+    branches: [main]
+    paths: ["src/**", ".github/workflows/collecte.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -r requirements.txt
+      - name: Collecte et résumé des données
+        env:
+          ANNEES: ${{ github.event.inputs.annees || '2025' }}
+        run: python -m src.collecte
+      - name: Enregistrer dans le dépôt
+        if: always()
+        run: |
+          git config user.name "pipeline-donnees"
+          git config user.email "actions@github.com"
+          git add data/ README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Données : mise à jour automatique $(date -u +%F)"
+            git pull --rebase && git push
+          fi
