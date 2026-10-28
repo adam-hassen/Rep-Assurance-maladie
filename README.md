@@ -3,7 +3,7 @@
 Données **réelles et ouvertes** de l'Assurance Maladie, collectées automatiquement depuis [open-data-assurance-maladie.ameli.fr](https://open-data-assurance-maladie.ameli.fr) (licence ouverte Etalab). Projet AssurIA, ENSIM.
 
 - **Mis à jour le** : 28/10/2026
-- **Fichiers traités** : 10
+- **Fichiers traités** : 11
 
 ## Le principe de l'assurance maladie
 
@@ -47,6 +47,7 @@ Les montants négatifs sont des régularisations (annulations de remboursements 
 | `A202505.csv.gz` | damir | 34 167 564 | 916.1 Mo |
 | `A202506.csv.gz` | damir | 34 412 402 | 924.3 Mo |
 | `A202507.csv.gz` | damir | 35 467 887 | 950.4 Mo |
+| `A202508.csv.gz` | damir | 30 731 153 | 815.0 Mo |
 | `OPEN_BIO_2025.zip` | bio | 316 799 | 3.9 Mo |
 | `OPEN_LPP_2025.CSV.gz` | lpp | 812 459 | 10.8 Mo |
 | `OPEN_MEDIC_2025.zip` | medic | 1 873 062 | 26.7 Mo |
