@@ -100,10 +100,17 @@ def telecharger(url: str, chemin: Path, essais: int = 6) -> None:
 # ------------------------------------------------------------------ Open DAMIR
 def traiter_damir(chemin: Path, nom: str) -> dict:
     """Résume un mois d'Open DAMIR : totaux par mois x prestation x âge x sexe x région, et par spécialité."""
+    import pyarrow as pa
+    import pyarrow.csv as pcsv
     colonnes = list(DAMIR_AXES) + list(DAMIR_MONTANTS)
+    types = {**{c: pa.float64() for c in DAMIR_MONTANTS}, **{c: pa.string() for c in DAMIR_AXES}}
+    lecteur = pcsv.open_csv(pa.input_stream(str(chemin), compression="gzip"),
+                            read_options=pcsv.ReadOptions(block_size=256 << 20),
+                            parse_options=pcsv.ParseOptions(delimiter=";"),
+                            convert_options=pcsv.ConvertOptions(include_columns=colonnes, column_types=types))
     morceaux_p, morceaux_s, lignes, echantillon = [], [], 0, []
-    for bloc in pd.read_csv(chemin, sep=";", usecols=colonnes, chunksize=2_000_000, low_memory=False,
-                            dtype={c: "float64" for c in DAMIR_MONTANTS}):
+    for lot in lecteur:
+        bloc = lot.to_pandas()
         lignes += len(bloc)
         for c in DAMIR_AXES:
             bloc[c] = pd.to_numeric(bloc[c], errors="coerce").fillna(-1).astype("int32")
@@ -115,7 +122,8 @@ def traiter_damir(chemin: Path, nom: str) -> dict:
                          observed=True)[list(DAMIR_MONTANTS)].sum()
         morceaux_p.append(p)
         morceaux_s.append(s)
-        log(f"  {lignes:,} lignes lues")
+        if lignes // 10_000_000 != (lignes - len(bloc)) // 10_000_000:
+            log(f"  {lignes:,} lignes lues")
     prest = pd.concat(morceaux_p).groupby(level=[0, 1, 2, 3, 4]).sum().reset_index()
     spec = pd.concat(morceaux_s).groupby(level=[0, 1, 2, 3]).sum().reset_index()
     ech = pd.concat(echantillon)
@@ -184,6 +192,16 @@ def resumer_tableau(df: pd.DataFrame) -> pd.DataFrame:
         axes.remove(plus_detaille)
 
 
+def enregistrer(message: str) -> None:
+    """Sur GitHub : enregistre dans le dépôt après chaque fichier, pour ne rien perdre si le passage s'arrête."""
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    import subprocess
+    ecrire_readme(json.loads(MANIFEST.read_text()))
+    cmd = 'git add data/ README.md && (git diff --cached --quiet || (git commit -qm "{m}" && git pull -q --rebase && git push -q))'
+    subprocess.run(cmd.format(m=message), shell=True, check=False)
+
+
 # ------------------------------------------------------------------ programme principal
 def main() -> int:
     DATA.mkdir(exist_ok=True)
@@ -204,7 +222,8 @@ def main() -> int:
                     continue
                 chemin = TMP / nom
                 try:
-                    telecharger(url, chemin)
+                    frais = [u for u in liens(base, annee) if nom_fichier(u) == nom]   # le jeton du lien expire
+                    telecharger(frais[0] if frais else url, chemin)
                     if base == "damir":
                         r = traiter_damir(chemin, nom)
                         dossier = DATA / "damir"
@@ -232,6 +251,7 @@ def main() -> int:
                 finally:
                     chemin.unlink(missing_ok=True)
                     MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False, sort_keys=True))
+                    enregistrer(f"Données : {nom}")
     ecrire_readme(manifest)
     log(f"Terminé : {traites} fichier(s) traité(s) ; {len(manifest)} au total")
     return 0
