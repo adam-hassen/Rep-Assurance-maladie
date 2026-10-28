@@ -1,0 +1,385 @@
+{
+  "open_damir": {
+    "titre": "Open Damir : base complète sur les dépenses d'assurance maladie interrégimes",
+    "slug": "open-damir-base-complete-sur-les-depenses-dassurance-maladie-interregimes",
+    "producteur": "Caisse nationale de l'Assurance Maladie",
+    "licence": "fr-lo",
+    "ressources": [
+      {
+        "titre": "Open DAMIR 2025",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2025",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T01:36:05.815251+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Descriptif OpenDamir",
+        "url": "https://www.assurance-maladie.ameli.fr/content/descriptif-des-variables-de-la-serie-open-damir-base-complete",
+        "format": "xls",
+        "taille": null,
+        "maj": "2025-02-11T09:08:37+00:00",
+        "type": "documentation"
+      },
+      {
+        "titre": "Open DAMIR 2024",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2024",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:38:54.677501+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2023",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2023",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T00:20:19.174636+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2022",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2022",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:58:49.218760+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2021",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2021",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:47:13.168739+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2020",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2020",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:46:08.990039+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2019",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2019",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T02:23:27.021010+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2018",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2018",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:43:25.933506+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2017",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2017",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T02:15:13.898733+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2016",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2016",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T03:54:07.822792+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2015",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2015",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T12:21:37.161020+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2014",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2014",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T03:53:13.520092+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2013",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2013",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T01:58:47.195473+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2012",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2012",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T12:08:10.969799+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2011",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2011",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T00:51:33.344964+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2010",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2010",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T04:03:51.754905+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "Open DAMIR 2009",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2009",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:56:05.394125+00:00",
+        "type": "main"
+      }
+    ]
+  },
+  "soins_de_ville": {
+    "titre": "Données nationales sur les dépenses d'assurance maladie relatives aux soins de ville",
+    "slug": "donnees-nationales-sur-les-depenses-dassurance-maladie-relatives-aux-soins-de-ville",
+    "producteur": "Caisse nationale de l'Assurance Maladie",
+    "licence": "fr-lo",
+    "ressources": [
+      {
+        "titre": "Descriptif ",
+        "url": "https://www.assurance-maladie.ameli.fr/content/descriptif-des-variables-de-la-serie-donnees-nationales-soins-de-ville",
+        "format": "xls",
+        "taille": null,
+        "maj": "2024-10-15T08:11:57+00:00",
+        "type": "documentation"
+      },
+      {
+        "titre": "NTOT2025",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2025",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T13:48:12.911101+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "NTOT2024",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2024",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T02:34:36.739594+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "NTOT2023",
+        "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2023",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T06:44:41.278605+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "NTOT2022",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2022",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T00:45:18.329435+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "NTOT2021",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2021",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:58:35.073393+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "NTOT2020",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2020",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T05:03:01.039749+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2019",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2019",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T13:54:18.795432+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2018",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2018",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T02:56:50.893781+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2017",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2017",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T13:43:38.786700+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2016",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2016",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T03:34:27.688028+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2015",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2015",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T11:45:20.085059+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2014",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2014",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T00:03:07.776975+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2013",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2013",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T06:36:45.230622+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2012",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2012",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T12:17:08.317994+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2011",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2011",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-28T04:32:30.682715+00:00",
+        "type": "main"
+      },
+      {
+        "titre": "N2010",
+        "url": "http://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Tables_N&Annee=2010",
+        "format": "csv",
+        "taille": null,
+        "maj": "2026-10-27T22:15:59.734601+00:00",
+        "type": "main"
+      }
+    ]
+  },
+  "recherche:open medic": [
+    {
+      "titre": "Open Medic : base complète sur les dépenses de médicaments interrégimes",
+      "slug": "open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 85
+    },
+    {
+      "titre": "Open Bio : base complète sur les dépenses de biologie médicale interrégimes",
+      "slug": "open-bio-base-complete-sur-les-depenses-de-biologie-medicale-interregimes",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 37
+    },
+    {
+      "titre": "Open PHMEV : bases sur les prescriptions hospitalières de médicaments délivrées en ville",
+      "slug": "open-phmev-bases-sur-les-prescriptions-hospitalieres-de-medicaments-delivrees-en-ville",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 22
+    },
+    {
+      "titre": "Open LPP : base complète sur les dépenses de dispositifs médicaux inscrits à la liste de produits et prestations (LPP) interrégimes",
+      "slug": "open-lpp-base-complete-sur-les-depenses-de-dispositifs-medicaux-inscrits-a-la-liste-de-produits-et-prestations-lpp-interregimes",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 61
+    }
+  ],
+  "recherche:open lpp": [
+    {
+      "titre": "Open LPP : base complète sur les dépenses de dispositifs médicaux inscrits à la liste de produits et prestations (LPP) interrégimes",
+      "slug": "open-lpp-base-complete-sur-les-depenses-de-dispositifs-medicaux-inscrits-a-la-liste-de-produits-et-prestations-lpp-interregimes",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 61
+    }
+  ],
+  "recherche:open bio assurance maladie": [],
+  "recherche:open ccam": [
+    {
+      "titre": "Open CCAM - Régional",
+      "slug": "open-ccam-regional",
+      "producteur": "Agence Technique de l'information sur l'Hospitalisation (ATIH)",
+      "nb_fichiers": 3
+    },
+    {
+      "titre": "Open CCAM - National",
+      "slug": "open-ccam-national",
+      "producteur": "Agence Technique de l'information sur l'Hospitalisation (ATIH)",
+      "nb_fichiers": 3
+    },
+    {
+      "titre": "Open CCAM - par établissement",
+      "slug": "open-ccam-par-etablissement",
+      "producteur": "Agence Technique de l'information sur l'Hospitalisation (ATIH)",
+      "nb_fichiers": 6
+    }
+  ],
+  "recherche:depenses assurance maladie": [
+    {
+      "titre": "Dépenses de santé remboursées par l’assurance maladie par région (soins de ville, établissements de santé publics et privés, établissements médico-sociaux) - juillet 2012",
+      "slug": "depenses-de-sante-remboursees-par-l-assurance-maladie-par-region-soins-de-ville-etablissement-571512",
+      "producteur": "Ministère du Travail du Plein emploi et de l'Insertion",
+      "nb_fichiers": 1
+    },
+    {
+      "titre": "Open Damir : base complète sur les dépenses d'assurance maladie interrégimes",
+      "slug": "open-damir-base-complete-sur-les-depenses-dassurance-maladie-interregimes",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 18
+    },
+    {
+      "titre": "Données nationales sur les dépenses d'assurance maladie relatives aux soins de ville",
+      "slug": "donnees-nationales-sur-les-depenses-dassurance-maladie-relatives-aux-soins-de-ville",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 17
+    },
+    {
+      "titre": "Données nationales sur les dépenses d'assurance maladie relatives aux établissements de santé privés",
+      "slug": "donnees-nationales-sur-les-depenses-dassurance-maladie-relatives-aux-etablissements-de-sante-prives",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 18
+    },
+    {
+      "titre": "Données par CPAM sur les dépenses d'assurance maladie relatives aux établissements de santé privés",
+      "slug": "donnees-par-cpam-sur-les-depenses-dassurance-maladie-relatives-aux-etablissements-de-sante-prives",
+      "producteur": "Caisse nationale de l'Assurance Maladie",
+      "nb_fichiers": 17
+    }
+  ]
+}
