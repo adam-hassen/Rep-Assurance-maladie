@@ -71,6 +71,14 @@
     "traite_le": "2026-10-28T20:29:27+00:00",
     "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download_file.php?…"
   },
+  "A202510.csv.gz": {
+    "annee": 2025,
+    "base": "damir",
+    "lignes": 35185026,
+    "taille_mo": 942.2,
+    "traite_le": "2026-10-28T20:52:21+00:00",
+    "url": "https://open-data-assurance-maladie.ameli.fr/depenses/download_file.php?…"
+  },
   "OPEN_BIO_2025.zip": {
     "annee": 2025,
     "base": "bio",
