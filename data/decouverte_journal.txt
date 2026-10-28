@@ -1,8 +1,5 @@
-[decouverte] Open Damir : base complète sur les dépenses d'assurance maladie interrégimes : 18 fichiers
-[decouverte] Open Medic : base complète sur les dépenses de médicaments interrégimes : 85 fichiers
-[decouverte] Open Bio : base complète sur les dépenses de biologie médicale interrégimes : 37 fichiers
-[decouverte] Open LPP : base complète sur les dépenses de dispositifs médicaux inscrits à la liste de produits et prestations (LPP) interrégimes : 61 fichiers
-[decouverte] Open PHMEV : bases sur les prescriptions hospitalières de médicaments délivrées en ville : 22 fichiers
-[decouverte] Données nationales sur les dépenses d'assurance maladie relatives aux soins de ville : 17 fichiers
-[decouverte] Données nationales sur les dépenses d'assurance maladie relatives aux établissements de santé privés : 18 fichiers
-[decouverte] Open CCAM - National : 3 fichiers
+[decouverte] damir_2025 : 12 fichiers
+[decouverte] medic_2025 : 1 fichiers
+[decouverte] lpp_2025 : 1 fichiers
+[decouverte] bio_2025 : 1 fichiers
+[decouverte] soins_ville_2025 : 12 fichiers
